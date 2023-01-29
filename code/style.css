@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo&family=Merriweather+Sans&family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300;700&family=Poiret+One&family=Roboto+Mono:wght@300&family=Source+Code+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo&family=Merriweather+Sans&family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300;700&family=Roboto+Mono:wght@300&family=Source+Code+Pro&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo&family=Merriweather+Sans&family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300;700&family=Poiret+One&family=Roboto+Mono:wght@300&family=Source+Code+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo&family=Merriweather+Sans&family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300;700&family=Roboto+Mono:wght@300&family=Source+Code+Pro&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -18,91 +20,168 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  background: url(./Images/pic3.jpeg);
+  background: url(./Images/Hero3.jpg);
   background-size:cover;
   background-attachment:initial;
-  text-transform: uppercase;
   background-position:center;
   position: relative;
   justify-content: center;
+  align-items:  center;
 } 
 
 .headertext{
+  font-size: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column; 
-  width: 80%;
+  width: 100%;
   align-items: center;
+  
 }
 
 .hero-text1{
   color: white;
-  justify-content: center;
   font-size: 1em;
+  /* font-family: 'Montserrat', sans-serif; */
+  padding-top: 12px;
+  padding-right: 500px;
+  font-size: 20px;
+  font-weight: bold;
+
+  
 }
 
 .hero-text2{
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 5em;
   color: white;
-  text-transform: uppercase;
+  font-family: 'WindSong', cursive;
+  font-weight: 300;
+  padding-right: 500px;
+
 }
 
  /* <!-- Here is a small text-section -->  */
+.image-section {
+display: flex;
+height: 100vh;
+/* border: pink solid 1px; */
+justify-content: space-evenly;
 
- .needle{
+}
+
+.image-section2 {
+  display: flex;
+  /* border: pink solid 1px; */
+  justify-content: space-evenly;
+  
+  }
+
+
+.image1{
+  flex-direction: column;
+  /* width: 20px; */
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-evenly;
+  border: black solid 1px; */
+  padding-bottom: 20px;
+}
+
+.image2{
+  flex-direction: column;
+  /* width: 20px; */
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+
+}
+
+.image3 {
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding: 20px;
+
+}
+
+ /* .needle{
   height: 30px;
   width: 30px;
   margin-top: 80px;
   margin-bottom: 40px;
-  }
+  } */
 
 h2 {
+  padding-top: 60px;
+  padding-bottom: 30px;
   font-size: 30px;
-  text-transform: uppercase;
+  font-family: 'Aboreto', cursive;
+  /* text-transform: uppercase; */
 }
 
 .textbox{
   Justify-content: center;
+  display: flex;
+  /* padding: 20px; */
+  flex-direction: row;
   text-align: center;
-  color: #646464;
+  color: #2d3d21;
   width: 100%;
   line-height: 1.2em;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
 }
 
-.coffeetext {
-  width:30em;
+.box {
+  padding: 30px;
+  size: 12px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.invitation-text {
+  /* width:60em; */
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   width: 100%;
-  max-width: 30em;
+  max-width: 40em;
+  font-size: 14px;
+
 }
 
 /* <!-- Sigup form -->  */
 
 .form-image-wrapper {
-  background: url(./Images/cake.jpeg);
+  /* background: url(./Images/cake.jpeg); */
   background-position: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  color: white;
+  /* color: white; */
   justify-content: center;
   padding-bottom: 20px;
+  /* border: solid black; */
+  background-color: #d1d5d6;
+ 
   }
 
 .form-wrapper{
   padding: 10px; 
   border-radius: 4px;
-  border: white solid 3px;
+  border: black solid 3px;
   max-width: 25rem;
   box-sizing: border-box;  
   margin-top: 20px;
   margin-right: 1rem;
   margin-left: 1rem;
+  
 }
 
 .title {
@@ -112,7 +191,8 @@ h2 {
 
   }
 
-form {
+
+/* form {
     flex-direction: column;
 }
 
@@ -133,8 +213,8 @@ input[type=text], input[type=password]  {
 
 a {
   font-size: 12px;
-  color: white;
-}
+  /* color: white; */
+/* }
 
 input[type=radio]{
    margin: 15px;
@@ -158,28 +238,33 @@ input[type=submit] {
 .text{
   font-size: 10px;
   color:#393535 ;
-}
+} */
 
 /* <!-- Accordion --> */
 
 .accordion{
   padding: 10px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   box-sizing: border-box;
-  max-width: 22rem;
-  width: 100%;
-  margin-top: 20px;
-  border: white solid 3px;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  /* max-width: 22rem;
+  margin-top: 40px; */
+  /* border: solid 3px;
+  margin-right: 1rem; */
+  /* margin-left: 1rem; */
+  /* border: solid 1px black; */
 }
 
 .accordion-name{
   display: flex;
-  max-width: 45rem;
+  /* max-width: 45rem; */
+  padding:30px;
   width: 100%;
   justify-content: center;
-  font-weight: normal;
+  /* font-weight: normal; */
+  /* border: solid 1px red; */
+  font-size: 30px;
+  color: #2d3d21;
+  font-family: 'Aboreto', cursive;
  }
 
 .accordion .contentBx {
@@ -191,21 +276,26 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.label{
-  padding-top:3rem;
-  padding: bottom 3rem;
-  padding-right: 3rem;
+ .label{ 
+  padding-top:2rem;
+  padding-left:20rem;
+  /* padding: bottom 3rem; */
+  /* padding-right: 3rem;  */
   text-align: left;
   outline: none;
   transition: 0.4s;
-  color:white;
-   text-align: center;
+  /* color:white; */
+   /* text-align: center; */
+   /* border: solid 1px pink; */
+   color: #2d3d21;
+   font-size: 20px;
+   
   }
 
 .accordion .contentBx .label::before{
   content: "+";
   position: absolute;
-  right: 4px;
+  right: 400px;
 }
 
 .accordion .contentBx.active .label::before{
@@ -219,26 +309,25 @@ input[type=submit] {
   overflow: hidden;
   transition: 0.5s;
   overflow-y: auto;
+  color: #2d3d21;
+  
 }
 
+.text.acc {
+  font-size: 13px;
+}
 .accordion .contentBx.active .content {
-  height: 110px;
-  padding: 10px;
-  background-color: grey;
-  font-size: 14px;
-  text-align: center;
+  height: 180px;
+  padding: 8px;
+  background-color: #d1d5d6;
+  /* background-color: grey; */
+  /* text-align: center; */
+  width: 80%;
+  padding-left:20rem;
+  color: #2d3d21;
 }
 
-footer{
-  display: flex;
-  font-size: 12px;
-  justify-content: center;
-  background-color: #646464;
-  height: 40px;
-  align-items: center;
-  color:grey;
-  text-transform: uppercase;
-}
+
 
 
 /* <!-- DESKTOP STYLING --> */
